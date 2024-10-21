@@ -8,12 +8,12 @@ use App\Http\Filters\ApiFilter;
 class CustomerFilter extends ApiFilter
 {
     protected $safeParams = [
-        'name' => ['eq', 'like'],
-        'type' => ['eq', 'like'],
-        'email' => ['eq', 'like'],
-        'address' => ['eq', 'like'],
-        'city' => ['eq', 'like'],
-        'state' => ['eq', 'like'],
+        'name' => ['eq'],
+        'type' => ['eq'],
+        'email' => ['eq'],
+        'address' => ['eq'],
+        'city' => ['eq'],
+        'state' => ['eq'],
         'postalCode' => ['eq', 'gt', 'lt'],
     ];
     protected $columnMap = [
